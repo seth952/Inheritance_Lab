@@ -24,8 +24,8 @@ public abstract class Employee {
         this.salary = salary;
     }
 
-    public double raiseSalary(double salary) {
-        this.salary = salary + (salary * 0.1);
+    public double raiseSalary(double percentage) {
+        this.salary = salary + (salary * percentage / 100);
         return this.salary;
 
     }
